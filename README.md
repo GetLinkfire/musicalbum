@@ -26,7 +26,7 @@ Use dotnet core.
 You are allowed to use any technology/third party you would like to use.
 Solution should be testable, we are not looking for 100% code coverage but show examples of how you make parts unit-testable.
 We want to get a better understanding of:
-The code you produce
+The code you produce.
 How do you go about architecting a scalable solution!
 
 
