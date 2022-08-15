@@ -1,6 +1,6 @@
 # Music Albums
 
-# Task description:
+# Task description
 Develop a microservice to support music albums.
 Spotify Web API should be used to implement the service.
 The service should support the following functionalities.
@@ -21,7 +21,7 @@ Docker
 Kubernetes
 Local or cloud kubernetes cluster
 
-# Requirements:
+# Requirements
 Use dotnet core.
 You are allowed to use any technology/third party you would like to use.
 Solution should be testable, we are not looking for 100% code coverage but show examples of how you make parts unit-testable.
