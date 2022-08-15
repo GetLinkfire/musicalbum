@@ -1,7 +1,7 @@
 # musicalbum
 Music Albums
 
-Task description:
+#Task description:
 Develop a microservice to support music albums.
 Spotify Web API should be used to implement the service.
 The service should support the following functionalities.
@@ -14,7 +14,7 @@ Write an API test to test one of the end points.
 Create a Readme file with proper instruction to run the project.
 
 
-Nice to have 
+#Nice to have 
 Deploy the microservice in a kubernetes cluster.
 Prerequisites:
 .NET core
