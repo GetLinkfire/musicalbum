@@ -1,5 +1,4 @@
-# musicalbum
-Music Albums
+# Music Albums
 
 # Task description:
 Develop a microservice to support music albums.
