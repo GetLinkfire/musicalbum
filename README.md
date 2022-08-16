@@ -21,13 +21,14 @@ Develop a microservice to manage music albums library. The service should suppor
 Create a Readme file with proper instruction to run the microservice
 
 
-## Testing 
+## Testing: 
     Write an API test automation to test one of the end points.Use any of the automation test frameworks that you are familiar with.
     Create a Readme file with proper instruction to set up and run the API test project so that the examiner will be able to set up the project properly.
 
 ## Deployment: 
 
-Use one of the following approaches which you familiar most:
+Use one of the following approaches which you familiar most.
+
     * Publish the microservice into the local folder. Prepare all instructions how to run the application and required infrastructure
     * Deploy the  microservice with Docker and docker-compose to deploy required infrastructure services
     * Deploy the microservice and infrastructure  in a kubernetes cluster
@@ -36,11 +37,11 @@ Use one of the following approaches which you familiar most:
       
       
 ## Prerequisites:
-  .NET + IDE of your choice. You can use VS 2022, VS for Mac, or VS Code
-  If you a go with deployment into container then you need to have one of the following:
-      Docker
-      Kubernetes
-      Local or cloud kubernetes cluster
+  * .NET + IDE of your choice. You can use VS 2022, VS for Mac, or VS Code
+  * If you a go with deployment into container then you need to have one of the following:
+      * Docker
+      * Kubernetes
+      * Local or cloud kubernetes cluster
       
 ## Requirements:
 
