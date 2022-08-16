@@ -29,11 +29,11 @@ Create a Readme file with proper instruction to run the microservice
 
 Use one of the following approaches which you familiar most.
 
-    * Publish the microservice into the local folder. Prepare all instructions how to run the application and required infrastructure
-    * Deploy the  microservice with Docker and docker-compose to deploy required infrastructure services
-    * Deploy the microservice and infrastructure  in a kubernetes cluster
-        * You can use available local kubernetes clusters like Microk8s or Minikube.
-        * Share the yaml files and a Readme file with proper instruction to deploy the application.
+* Publish the microservice into the local folder. Prepare all instructions how to run the application and required infrastructure
+* Deploy the  microservice with Docker and docker-compose to deploy required infrastructure services
+* Deploy the microservice and infrastructure  in a kubernetes cluster
+  * You can use available local kubernetes clusters like Microk8s or Minikube.
+  * Share the yaml files and a Readme file with proper instruction to deploy the application.
       
       
 ## Prerequisites:
