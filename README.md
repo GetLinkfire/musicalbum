@@ -9,7 +9,7 @@ Develop a microservice to manage music albums library. The service should suppor
 
 * Search Album by name and artist name
     * Use either Spotify or Deezer API to find albums
-    * Found results should include:
+    * Found results should include
           * Artist name
           * Album name
           * Album cover (if available)
@@ -21,7 +21,7 @@ Develop a microservice to manage music albums library. The service should suppor
 Create a Readme file with proper instruction to run the microservice
 
 
-## Testing: 
+## Testing 
     * Write an API test automation to test one of the end points.Use any of the automation test frameworks that you are familiar with.
 
     Create a Readme file with proper instruction to set up and run the API test project so that the examiner will be able to set up the project properly.
