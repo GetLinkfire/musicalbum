@@ -63,12 +63,12 @@ Don't hesitate to contact us for questions and support while working on the task
 
 ## Reference:
   * [Spotify Web API](https://myoctocat.com/assets/images/base-octocat.svg)
-  * Deezer Web API
-  * Visual Studio 2022
-  * Visual Studio for Mac
-  * Visual Studio Code
-  * Microk8s
-  * Minikube
+  * [Deezer Web API](https://developers.deezer.com/api)
+  * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/)
+  * [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
+  * [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432)
+  * [Microk8s](https://microk8s.io)
+  * [Minikube](https://minikube.sigs.k8s.io/docs/start/)
 
 
 
