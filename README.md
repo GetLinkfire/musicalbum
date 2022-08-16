@@ -22,8 +22,7 @@ Create a Readme file with proper instruction to run the microservice
 
 
 ## Testing 
-    * Write an API test automation to test one of the end points.Use any of the automation test frameworks that you are familiar with.
-
+    Write an API test automation to test one of the end points.Use any of the automation test frameworks that you are familiar with.
     Create a Readme file with proper instruction to set up and run the API test project so that the examiner will be able to set up the project properly.
 
 ## Deployment: 
