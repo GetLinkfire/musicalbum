@@ -62,7 +62,7 @@ We want to get a better understanding of:
 Don't hesitate to contact us for questions and support while working on the task.
 
 ## Reference:
-  * [Spotify Web API(https://myoctocat.com/assets/images/base-octocat.svg](https://developer.spotify.com/documentation/web-api/reference/#/)
+  * [Spotify Web API(https://myoctocat.com/assets/images/base-octocat.svg]
   * Deezer Web API
   * Visual Studio 2022
   * Visual Studio for Mac
