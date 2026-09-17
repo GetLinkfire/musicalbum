@@ -1,76 +1,103 @@
-# Music Albums Library - Task Description
-## Development: 
-Develop a microservice to manage music albums library. The service should support the following functionalities:
-* Create albums library
+# Music Albums Library — Take-Home Assignment
 
-  It’s expected that one user can have only one library
-  Aside music libraries users have only name
-  No authentication is required (but it would be nice to have)
+## Overview
 
-* Search Album by name and artist name
-    * Use either Spotify or Deezer API to find albums
-    * Found results should include
-          * Artist name
-          * Album name
-          * Album cover (if available)
-          * Album URL
-* Save one or more found Albums into my library
-* Remove Albums from library
-* Implement the required unit testing.
+Build a microservice that lets users manage a personal library of music albums. Album data comes from a third-party music catalogue (Spotify or Deezer).
 
-Create a Readme file with proper instruction to run the microservice
+We are not looking for a production-complete system — we are looking at how you structure one.
 
+**Time budget:** Aim for about 4 hours of focused work. Please don't spend more than 6 — if you run short, keep the service and its unit tests complete, then the API test, then deployment, and write down in the README what you would have done next.
 
-## Testing: 
-   * Write an API test automation to test one of the end points.Use any of the automation test frameworks that you are familiar with.
-   * Create a Readme file with proper instruction to set up and run the API test project so that the examiner will be able to set up the project properly.
+## Part 1 — The Service
 
-## Deployment: 
+Implement a microservice supporting the following:
 
-Use one of the following approaches which you familiar most.
+**Users and libraries**
+- A user is just a name — no other attributes, no profile.
+- Each user owns exactly one library, and a library belongs to exactly one user.
+- Authentication is not required, but is welcome if you want to show it.
 
-* Publish the microservice into the local folder. Prepare all instructions how to run the application and required infrastructure
-* Deploy the  microservice with Docker and docker-compose to deploy required infrastructure services
-* Deploy the microservice and infrastructure  in a kubernetes cluster
-  * You can use available local kubernetes clusters like Microk8s or Minikube.
-  * Share the yaml files and a Readme file with proper instruction to deploy the application.
-      
-      
-## Prerequisites:
-  * .NET + IDE of your choice. You can use VS 2022, VS for Mac, or VS Code
-  * If you a go with deployment into container then you need to have one of the following:
-      * Docker
-      * Kubernetes
-      * Local or cloud kubernetes cluster
-      
-## Requirements:
+**Search for albums**
+- Search by album name and artist name.
+- Back the search with either the Spotify API or the Deezer API.
+- Each result should include: artist name, album name, album cover (when available), and album URL.
 
-  * Use .NET 6
-  * You are allowed to use any technology/third party you would like to use.
-  * Solution should be testable, we are not looking for 100% code coverage but show examples of how you make parts unit-testable.
-  
-We want to get a better understanding of:
+**Manage the library**
+- Add one or more albums from search results to the library.
+- Remove albums from the library.
 
-* The code you produce
-* How do you go about architecting a scalable solution. Let’s imagine that you support not one but both integrations and planning to add more in future.
+**Test it**
+- Include unit tests. We are not looking for 100% coverage — show us the parts you chose to make unit-testable, and why that shape works.
 
-## Notes:
-* We would like to see a piece of code as you would do on your normal working day.
-* You can use any technology for API Testing.
-* Please send us whatever you have done before the deadline even if it is an uncompleted task.
+**Document it**
+- A README with everything needed to build and run the service.
 
-Don't hesitate to contact us for questions and support while working on the task.
+## Part 2 — API Test Automation
 
-## Reference:
-  * [Spotify Web API](https://myoctocat.com/assets/images/base-octocat.svg)
-  * [Deezer Web API](https://developers.deezer.com/api)
-  * [Visual Studio 2022](https://visualstudio.microsoft.com/vs/community/)
-  * [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
-  * [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432)
-  * [Microk8s](https://microk8s.io)
-  * [Minikube](https://minikube.sigs.k8s.io/docs/start/)
+- Write an automated API test covering at least one endpoint.
+- Use any test automation framework you are comfortable with.
+- Include a README covering setup and execution, complete enough that we can run the suite without asking you questions.
 
+## Part 3 — Deployment
 
+Pick whichever of these you know best:
 
+1. **Local folder** — publish the service locally and document how to run it plus any infrastructure it needs.
+2. **Docker** — ship a `docker-compose` setup that brings up the service and its dependencies.
+3. **Kubernetes** — deploy to a local cluster (Minikube, MicroK8s, kind). Share the YAML manifests and a README with deployment steps.
 
+Whichever you choose, the README is part of the deliverable.
 
+## Technical Requirements
+
+- **.NET 10 or later.**
+- Any third-party libraries or tools you like.
+- The solution should be testable by design.
+
+## Prerequisites
+
+- .NET 10 SDK and an IDE of your choice (Visual Studio, VS Code, Rider).
+- If you deploy to a container or cluster: Docker, and a local or cloud Kubernetes cluster for option 3.
+
+## What We're Looking For
+
+Two things, in roughly equal measure:
+
+1. **The code itself** — structure, naming, error handling, test design, and the trade-offs you chose to make explicit.
+2. **How you'd scale it** — assume we ship *both* Spotify and Deezer, and add more providers later. We're interested in how your design absorbs that: where the provider boundary sits, what stays the same when a third one arrives, and how you'd handle differences in their data and rate limits.
+
+A short section in the README explaining your architectural decisions (and anything you deliberately left out) is worth more to us than extra features.
+
+## Submitting
+
+Share a link to a public Git repository, or a zip archive, containing the service, the API test project, deployment files, and READMEs.
+
+## Notes
+
+* Write this the way you would write code on a normal working day — same structure, same care, no need to gold-plate it.
+* Use whatever stack you like for the API tests.
+* Send us what you have when time is up even if the task is unfinished. An incomplete solution with a clear README beats a rushed complete one, and we would rather see where you got to than nothing at all.
+* If anything in the task is ambiguous, make a decision, note it in the README, and move on.
+
+**Choosing a provider.** Deezer is the lower-friction option: its public search endpoints need no API key, no app registration and no paid account, so you can call them straight away. Spotify requires registering an app in its developer dashboard for a client ID and secret, and its documentation states that the Web API expects a Spotify Premium account. Either provider is fine for this task — pick the one that gets you to the interesting part faster.
+
+Questions are welcome at any point while you work on this — reach out and we will help.
+
+## References
+
+**Music APIs**
+* [Spotify Web API](https://developer.spotify.com/documentation/web-api) — see the [getting started tutorial](https://developer.spotify.com/documentation/web-api/tutorials/getting-started) for registering an app and obtaining a client ID and secret
+* [Deezer API](https://developers.deezer.com/api) — search endpoints are open; logging in is required to accept the terms for the wider API
+
+**.NET**
+* [.NET downloads](https://dotnet.microsoft.com/download) — .NET 10 is the current LTS release
+* [.NET support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core)
+
+**IDEs**
+* [Visual Studio 2026 (Community)](https://visualstudio.microsoft.com/vs/community/) — Windows
+* [Visual Studio Code](https://code.visualstudio.com/) — Windows, macOS, Linux
+* [JetBrains Rider](https://www.jetbrains.com/rider/) — Windows, macOS, Linux; free for non-commercial use
+
+**Local Kubernetes**
+* [MicroK8s](https://canonical.com/microk8s/)
+* [minikube](https://minikube.sigs.k8s.io/docs/start/)
